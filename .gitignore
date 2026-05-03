@@ -1,0 +1,22 @@
+node_modules
+.pnpm-store
+
+# Per-app build outputs
+apps/*/.next
+apps/*/out
+apps/*/.output
+apps/*/dist
+apps/*/public/posts
+apps/react-server/.react-server
+apps/gatsby/public
+apps/gatsby/.cache
+
+# Bench results (raw per-run JSON; charts and REPORT.md are committed)
+bench/results
+bench/results.json
+
+# OS / editor
+.DS_Store
+.vscode
+.idea
+*.log

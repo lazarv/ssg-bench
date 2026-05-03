@@ -1,0 +1,18 @@
+{
+  "name": "@ssg-test/tanstack",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@ssg-test/shared": "workspace:*",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-start": "latest",
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  }
+}

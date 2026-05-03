@@ -1,0 +1,13 @@
+{
+  "name": "@ssg-test/astro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "astro build"
+  },
+  "dependencies": {
+    "@ssg-test/shared": "workspace:*",
+    "astro": "latest"
+  }
+}

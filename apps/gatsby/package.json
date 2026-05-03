@@ -1,0 +1,14 @@
+{
+  "name": "@ssg-test/gatsby",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "@ssg-test/shared": "workspace:*",
+    "gatsby": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}

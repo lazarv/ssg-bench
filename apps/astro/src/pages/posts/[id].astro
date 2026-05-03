@@ -1,0 +1,30 @@
+---
+import { allIds, getPost } from "@ssg-test/shared";
+
+// Astro requires a materialized array — no streaming hook.
+export async function getStaticPaths() {
+  return allIds().map((id) => ({ params: { id: String(id) } }));
+}
+
+const { id } = Astro.params;
+const post = getPost(Number(id));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{post.title}</title>
+  </head>
+  <body>
+    <article>
+      <h1>{post.title}</h1>
+      <p>{post.body}</p>
+      <ul>
+        {post.tags.map((tag) => <li>{tag}</li>)}
+      </ul>
+      <nav aria-label="related">
+        {post.neighbors.map((n) => <a href={`/posts/${n}/`}>Post #{n}</a>)}
+      </nav>
+    </article>
+  </body>
+</html>

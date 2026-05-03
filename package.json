@@ -1,0 +1,20 @@
+{
+  "name": "ssg-test",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "bench": "node bench/run.mjs",
+    "bench:1k": "PAGE_COUNT=1000 node bench/run.mjs",
+    "bench:10k": "PAGE_COUNT=10000 node bench/run.mjs",
+    "bench:100k": "PAGE_COUNT=100000 node bench/run.mjs",
+    "bench:sweep": "node bench/sweep.mjs",
+    "report": "node bench/report.mjs",
+    "chart": "node bench/chart.mjs",
+    "clean": "node bench/clean.mjs"
+  },
+  "devDependencies": {}
+}

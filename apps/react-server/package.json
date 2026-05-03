@@ -1,0 +1,13 @@
+{
+  "name": "@ssg-test/react-server",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "react-server build --export --outDir dist"
+  },
+  "dependencies": {
+    "@lazarv/react-server": "latest",
+    "@ssg-test/shared": "workspace:*"
+  }
+}

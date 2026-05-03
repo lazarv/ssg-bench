@@ -1,0 +1,15 @@
+packages:
+  - "apps/*"
+  - "shared"
+  - "bench"
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  core-js-pure: true
+  es5-ext: true
+  esbuild: true
+  gatsby: true
+  gatsby-cli: true
+  lmdb: true
+  msgpackr-extract: true
+  sharp: true
